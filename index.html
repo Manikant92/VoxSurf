@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoxSurf | Surf the web with voice-powered accessibility</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+        body {
+            background-color: #fcfeff;
+            color: #368fde;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .font-main {
+            font-family: "Playwrite GB S", cursive;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .navbar {
+            background-color: transparent !important;
+            padding: 1rem 2rem;
+        }
+
+        .navbar-brand {
+            font-size: 2.5rem;
+            color: white !important;
+        }
+
+        .navbar-brand:hover {
+            color: rgb(196, 197, 183) !important;
+        }
+
+        .github-logo {
+            height: 2.5rem;
+            transition: filter 0.3s;
+        }
+
+        .github-logo:hover {
+            filter: brightness(0.8);
+        }
+
+        .hero-title {
+            color: rgb(10, 126, 251);
+            font-size: 4.5rem;
+            text-align: center;
+            margin-top: -3rem;
+        }
+
+
+        .hero-subtitle {
+            color: rgb(96, 168, 226);
+            font-size: 1.8rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .feature-image {
+            width: 95%;
+            border-radius: 25px;
+            transition: transform 0.3s;
+        }
+
+        .feature-image:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-list {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: rgb(96, 168, 226);
+        }
+
+        .feature-list li:first-child {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .partner-logos img {
+            max-height: 40px;
+            margin: 1rem;
+            object-fit: contain;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            .feature-list {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">∞</a>
+            <a href="https://github.com/Manikant92/VoxSurf" target="_blank" class="ms-auto">
+                <img src="/github_logo.png" alt="GitHub Logo" class="github-logo">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="hero-title font-main">VoxSurf.ai</h1>
+        <h3 class="hero-subtitle">⠃⠗⠕⠺⠎⠑⠃⠇⠊⠝⠙</h3>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-lg-7 mb-4">
+                <img src="home.jpeg" alt="VoxSurf Demo" class="feature-image shadow">
+            </div>
+            
+            <div class="col-lg-5">
+                <ul class="feature-list list-unstyled">
+                    <li>An Interactive AI Browser</li>
+                    <li>For the first time, visually impaired can <b>interact</b> with the internet with more than a screenreader</li>
+                    <li>Ask to navigate/click/fill anything, open/close tabs, ask questions, summarize, RAG, automate a process etc</li>
+                    <li>Powered by Text/STT Input and TTS Output</li>
+                </ul>
+
+                <div class="text-center mt-5">
+                    <h5 class="mb-4"><b>Powered by</b></h4>
+                    <div class="partner-logos d-flex flex-wrap justify-content-center align-items-center">
+                        <img src="google.webp" alt="Google Logo">
+                        <img src="fetch.png" alt="Fetch Logo">
+                        <img src="groq.png" alt="Groq Logo">
+                        <img src="deepgram.png" alt="Deepgram Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
